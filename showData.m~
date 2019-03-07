@@ -1,0 +1,15 @@
+%load('Gaidica2019Data');
+
+% we recorded 366 units over 30 sessions in 5 rats
+
+% these are the rats
+subjectNames = analysisConf.subjects;
+% these are the neuron names based on the rat/recording wire
+neuronNames = analysisConf.neurons;
+% these are the session names (there are multiple units per session)
+sessionNames = analysisConf.sessionNames;
+
+% all_ts are all the timestamps from every unit, probably not that useful
+
+% all_tsPeths are +/-1s peri-event timestamps for each unit-trial
+sixUnitall_tsPeths{1,6}{12,4}
