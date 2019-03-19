@@ -1,4 +1,4 @@
-%load('Gaidica2019Data');
+%load('Gaidica2019Data_20190319');
 
 % we recorded 366 units over 30 sessions in 5 rats
 
@@ -9,13 +9,18 @@ neuronNames = analysisConf.neurons;
 % these are the session names (there are multiple units per session)
 sessionNames = analysisConf.sessionNames;
 
+% all the correct trials for unit-session 13
+correctTrials_unit13 = all_trialIdInfo{13}.correct;
+% all the correct trials for unit-session 13 (see also: correctIpsi)
+correctTrials_contra_unit13 = all_trialIdInfo{13}.correctContra;
+
 % all_ts are all the timestamps from every unit, probably not that useful
 
 % all_tsPeths are +/-1s peri-event timestamps for each unit-trial
 % ex. of a single unit-trial at centerOut (event 4)
-ts_unit13_trial12_event4 = all_tsPeths{1,13}{12,4};
+ts_unit13_trial32_event4 = all_tsPeths{1,13}{32,4};
 figure; 
-histogram(ts_unit13_trial12_event4,linspace(-1,1,1000));
+histogram(ts_unit13_trial32_event4,linspace(-1,1,1000));
 ylim([0 1.2]); yticks(0);
 xlim([-1 1]); xticks([-1 0 1]);
 title('spike times');
