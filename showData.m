@@ -14,7 +14,8 @@ correctTrials_unit13 = all_trialIdInfo{13}.correct;
 % all the correct trials for unit-session 13 (see also: correctIpsi)
 correctTrials_contra_unit13 = all_trialIdInfo{13}.correctContra;
 
-% all_ts are all the timestamps from every unit, probably not that useful
+% all_trials: all the trial data
+% all_ts: all the spike timestamps
 
 % all_tsPeths are +/-1s peri-event timestamps for each unit-trial
 % ex. of a single unit-trial at centerOut (event 4)
